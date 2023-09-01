@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --cover-color: #581818;
+  --cover-text-color: #d6bf8a;
+}
+
+
+
+body {
+  width: 98vw;
+  height: 98vh;
+  background-color: var(--cover-color);
+}
