@@ -1,3 +1,5 @@
-<div class="parent">
-  <p><strong>{{title}}</strong><br> <span>Coming Soon!</span></p>
+<div class="parent" *ngIf="!pageData">
+  <p><strong>{{englishTitle}}</strong><br> <span>Coming Soon!</span></p>
 </div>
+
+<app-page *ngIf="pageData" [dataFromParent]="paramForChild"></app-page>

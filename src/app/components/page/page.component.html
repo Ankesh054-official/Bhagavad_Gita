@@ -1,0 +1,13 @@
+<div class="page-parent" *ngIf="pageData" style="background-color: white;">
+    <div class="page non-active lst-page"  *ngIf="lstPageData">
+        <app-single-page [dataFromParent]="paramForChild"></app-single-page>
+    </div>
+
+    <div class="page active current-page" *ngIf="currentPageData">
+        <app-single-page [dataFromParent]="paramForChild"></app-single-page>
+    </div>
+
+    <div class="page non-active nxt-page"  *ngIf="nxtPageData">
+        <app-single-page [dataFromParent]="paramForChild"></app-single-page>
+    </div>
+</div>

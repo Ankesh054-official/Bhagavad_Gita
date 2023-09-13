@@ -19,7 +19,8 @@ describe('AppComponent', () => {
   it(`should have as title 'Bhagavad Gita'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Bhagavad Gita');
+    expect(app.englishTitle).toEqual('Bhagavad Gita');
+    expect(app.sanskritTitle).toEqual('श्रीमद्‍भगवद्‍-गीता');
   });
 
   it('should render title', () => {
