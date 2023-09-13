@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Bhagavad-Gita'`, () => {
+  it(`should have as title 'Bhagavad Gita'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Bhagavad-Gita');
+    expect(app.title).toEqual('Bhagavad Gita');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Bhagavad-Gita app is running!');
+    expect(compiled.querySelector('.parent p span')?.textContent).toContain('Coming Soon!');
   });
 });
